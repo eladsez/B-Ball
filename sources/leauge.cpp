@@ -1,6 +1,5 @@
 #include "leauge.hpp"
 #include <algorithm>
-#include <string>
 
 namespace BBall {
 
@@ -31,7 +30,7 @@ namespace BBall {
         printf("===================================================================\n");
         int i = 0;
         for (Team *team: teams) {
-            printf("%5d|%25s|%6d|%6d|%10d|%10d\n", ++i, team->get_name().c_str(), team->get_wins(), team->get_loses(),
+            printf("%5d|%25s|%6u|%6u|%10u|%10u\n", ++i, team->get_name().c_str(), team->get_wins(), team->get_loses(),
                    team->get_best_wins_seq(), team->get_best_loses_seq());
         }
 
