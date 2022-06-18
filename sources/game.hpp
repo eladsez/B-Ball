@@ -28,8 +28,11 @@ namespace BBall {
         unsigned int score_home;
         static random_device rd;
         static mt19937 gen;
+
         void home_win();
+
         void away_win();
+
         void update_teams();
 
     public:
